@@ -1,3 +1,4 @@
+import Star from '../../assets/star.svg';
 const Main = ({ allBooks }) => {
   return (
     <div className="container mx-auto grid grid-cols-1 gap-8 max-w-7xl md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -17,11 +18,11 @@ const Main = ({ allBooks }) => {
               <h4 className="text-lg font-bold lg:text-xl">${book?.price}</h4>
               {/* <!-- stars --> */}
               <div className="flex items-center space-x-1">
-                <img src="./assets/star.svg" />
-                <img src="./assets/star.svg" />
-                <img src="./assets/star.svg" />
-                <img src="./assets/star.svg" />
-                <span className="text-xs lg:text-sm">(4 Star)</span>
+                <img src={Star} />
+                <img src={Star} />
+                <img src={Star} />
+                <img src={Star} />
+                <span className="text-xs lg:text-sm">{book.ratings}</span>
               </div>
               {/* <!-- stars ends --> */}
             </div>
