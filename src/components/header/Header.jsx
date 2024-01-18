@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ handleSearch, handleSortBy }) => {
   return (
     <header className="mb-8 lg:mb-10 mx-auto max-w-7xl">
       <div className="mx-auto flex items-end justify-between max-md:max-w-[95%] max-md:flex-col max-md:items-start max-md:space-y-4 my-10 lg:my-14">
@@ -9,12 +9,13 @@ const Header = () => {
             Trending Books of the Year
           </h2>
           {/* <!-- Search Box --> */}
-          <form>
+          <form onChange={handleSearch}>
             <div className="flex">
               <div className="relative w-full overflow-hidden rounded-lg border-2 border-[#1C4336] text-[#1C4336] md:min-w-[380px] lg:min-w-[440px]">
                 <input
                   type="search"
                   id="search-dropdown"
+                  name="search"
                   className="z-20 block w-full bg-white px-4 py-2.5 pr-10 text-[#1C4336] placeholder:text-[#1C4336] focus:outline-none"
                   placeholder="Search Book"
                   required
@@ -51,6 +52,7 @@ const Header = () => {
         <div className="flex items-stretch space-x-3">
           {/* <!-- Sort --> */}
           <select
+            onClick={handleSortBy}
             className="cursor-pointer rounded-md border px-4 py-2 text-center text-gray-600"
             name="sortBy"
             id="sortBy"

@@ -1,5 +1,5 @@
 import Star from '../../assets/star.svg';
-const Main = ({ allBooks }) => {
+const Main = ({ allBooks, handleAddToFavorite, favorite }) => {
   return (
     <div className="container mx-auto grid grid-cols-1 gap-8 max-w-7xl md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {allBooks?.map(book => (
@@ -45,14 +45,17 @@ const Main = ({ allBooks }) => {
                 </svg>
                 Add to Cart
               </button>
-              <button className="flex min-w-[132px] items-center justify-center gap-1 rounded-md bg-[#1C4336]/[14%] py-1.5 text-[#1C4336] transition-all hover:bg-[#1C4336]/[24%] lg:py-1.5">
+              <button
+                onClick={() => handleAddToFavorite(book.id)}
+                className="flex min-w-[132px] items-center justify-center gap-1 rounded-md bg-[#1C4336]/[14%] py-1.5 text-[#1C4336] transition-all hover:bg-[#1C4336]/[24%] lg:py-1.5"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-5 w-5"
+                  className={favorite ? 'h-5 w-5 ' : 'h-5 w-5 text-red-600'}
                 >
                   <path
                     strokeLinecap="round"
