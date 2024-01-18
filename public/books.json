@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "bookname": "A Software Craftsmanship",
+    "writer": "Robert C. Martin",
+    "price": 15,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 2,
+    "bookname": " Your Journey to Mastery",
+    "writer": "Andrew Hunt",
+    "price": 12,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 3,
+    "bookname": "Effective Java",
+    "writer": "Joshua Bloch",
+    "price": 10,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 4,
+    "bookname": "Head First Design Patterns",
+    "writer": "Elisabeth Robson",
+    "price": 14,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 5,
+    "bookname": "JavaScript: The Good Parts",
+    "writer": "Douglas Crockford",
+    "price": 19,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 6,
+    "bookname": "Python Crash Course",
+    "writer": "Eric Matthes",
+    "price": 22,
+    "rating": 5,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 7,
+    "bookname": " A Modern Programming",
+    "writer": "Marijn Haverbeke",
+    "price": 11,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  },
+  {
+    "id": 8,
+    "bookname": "Essays on Software Engineering",
+    "writer": "Frederick P. Brooks Jr",
+    "price": 18,
+    "rating": 4,
+    "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
+  }
+]
