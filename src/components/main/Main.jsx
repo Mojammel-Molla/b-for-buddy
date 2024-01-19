@@ -2,7 +2,7 @@ import Star from '../../assets/star.svg';
 const Main = ({ allBooks, handleAddToFavorite, favorite }) => {
   return (
     <div className="container mx-auto grid grid-cols-1 gap-8 max-w-7xl md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {allBooks?.map(book => (
+      {[...allBooks]?.map(book => (
         <div key={book.id} className="space-y-3">
           {/* <!-- thumbnail --> */}
           <div className="flex items-center justify-center rounded-md border border-[#324251]/30 bg-white p-4">
@@ -55,7 +55,7 @@ const Main = ({ allBooks, handleAddToFavorite, favorite }) => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className={favorite ? 'h-5 w-5 ' : 'h-5 w-5 text-red-600'}
+                  className={favorite ? 'h-5 w-5 text-red-600 ' : 'h-5 w-5 '}
                 >
                   <path
                     strokeLinecap="round"

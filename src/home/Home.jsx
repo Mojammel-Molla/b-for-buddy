@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const Home = () => {
   const [allBooks, setAllBooks] = useState([]);
   const [favorite, setFavorite] = useState(false);
-  const [search, setSearch] = useState('');
+  const [newSearch, setNewSearch] = useState('');
   const [sortBy, setSortBy] = useState('');
   useEffect(() => {
     fetch('/books.json')
@@ -17,28 +17,35 @@ const Home = () => {
 
   const handleSearch = e => {
     e.preventDefault();
-    setSearch(e.target.value);
-    const findBook = allBooks.filter(
-      book => book.bookname.toLowerCase() === search.toLowerCase()
+    setNewSearch(e.target.value);
+    const findBook = allBooks.filter(book =>
+      book.bookname.toLowerCase().includes(newSearch.toLowerCase())
     );
-
     setAllBooks(findBook);
   };
 
   const handleSortBy = e => {
     e.preventDefault();
     setSortBy(e.target.value);
+    if (sortBy === 'aec') {
+      const aecValue = allBooks.sort((a, b) =>
+        a.bookname.localeCompare(b.bookname)
+      );
+      console.log(aecValue);
+    } else if (sortBy === 'dec') {
+      const decValue = allBooks.sort((a, b) =>
+        b.bookname.localeCompare(a.bookname)
+      );
+      console.log(decValue);
+    }
+    console.log(sortBy);
   };
-
   const handleAddToFavorite = id => {
-    // console.log(id);
+    console.log(id);
     const favoriteBook = allBooks.find(book => book.id === id);
     console.log(favoriteBook);
-    if (favoriteBook) {
-      setFavorite(true);
-    } else {
-      setFavorite(!favorite);
-    }
+
+    setFavorite(!favorite);
   };
 
   return (
@@ -49,7 +56,6 @@ const Home = () => {
         allBooks={allBooks}
         handleAddToFavorite={handleAddToFavorite}
         favorite={favorite}
-        sortBy={setSortBy}
       ></Main>
       <Footer></Footer>
     </div>

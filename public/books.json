@@ -5,6 +5,8 @@
     "writer": "Robert C. Martin",
     "price": 15,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2016,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -13,6 +15,8 @@
     "writer": "Andrew Hunt",
     "price": 12,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2019,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -21,6 +25,8 @@
     "writer": "Joshua Bloch",
     "price": 10,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2020,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -29,6 +35,8 @@
     "writer": "Elisabeth Robson",
     "price": 14,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2021,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -37,6 +45,8 @@
     "writer": "Douglas Crockford",
     "price": 19,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2013,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -45,6 +55,8 @@
     "writer": "Eric Matthes",
     "price": 22,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2015,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -53,6 +65,8 @@
     "writer": "Marijn Haverbeke",
     "price": 11,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2022,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   },
   {
@@ -61,6 +75,8 @@
     "writer": "Frederick P. Brooks Jr",
     "price": 18,
     "ratings": 4,
+    "isFavorite": false,
+    "publishIn": 2012,
     "image": "https://i.postimg.cc/6QQ3GXzs/book.png"
   }
 ]
